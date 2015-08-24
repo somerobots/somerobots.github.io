@@ -1,0 +1,54 @@
+<footer class="site-footer">
+
+<div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.footer_title }}</h2>
+
+    <div class="footer-col-wrapper">
+
+        <div class="footer-col  footer-col-1">
+            <p class="text">{{ site.support_description }}</p>
+        </div>
+          
+        <div class="footer-col  footer-col-2">
+            <ul class="contact-list">
+            {% if site.support_issue_tracker_url %}
+            <li>
+                Issue Tracker <br />
+                <a href="{{ site.support_issue_tracker_url }}">{{ site.support_issue_tracker_title }}</a>
+            </li>
+            {% endif %}
+            {% if site.support_twitter_username %}
+            <li>
+                Twitter <br />
+                <a href="https://twitter.com/{{ site.support_twitter_username }}">
+                    @{{ site.support_twitter_username }}
+                </a>
+            </li>
+            {% endif %}
+            {% if site.support_email %}
+            <li>
+                Email <br />
+                <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>
+            </li>
+            {% endif %}
+            </ul>
+        </div> 
+        
+        <div class="footer-col  footer-col-3">
+            <ul class="post-list">
+                {% for post in site.posts %}
+                <li>
+                    <h3>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h3>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div
+        
+    </div>
+</div>
+
+</footer>

@@ -1,0 +1,21 @@
+# Site settings
+title: Freshcocoa
+baseurl: ""
+url: "http://www.freshcocoa.co.uk"
+
+# Build settings
+markdown: kramdown
+
+# People
+matt_name: Matthew Wilkinson
+matt_title: Developer and Founder
+matt_email: matt@freshcocoa.co.uk
+
+# Site Footer
+footer_title: Support
+support_issue_tracker_title: gitlab.com/Freshcocoa/Trident
+support_issue_tracker_url: https://gitlab.com/Freshcocoa/Trident
+support_email: support@freshcocoa.co.uk
+support_twitter_username: freshcocoa_support
+support_description: >
+  If you have any problems with our applications you can use our public issue tracker, or contact us directly through Twitter and Email.
