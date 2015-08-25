@@ -312,3 +312,13 @@
         }
     }
 }
+
+img[alt=me] {
+    border-radius: 160px;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
