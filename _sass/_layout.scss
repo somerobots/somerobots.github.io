@@ -1,109 +1,94 @@
+#home {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#trident-logo {
+  color: #111;
+  font-weight: 200;
+  font-size: 64px;
+  margin: .5em 0 0 240px;
+  position: relative;
+  font-family: 'helvetica neu', helvetica, sans-serif;
+}
+
+.wrap {
+  min-width: 600px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#features {
+  background: #333c47;
+  padding: $spacing-unit 0;
+}
+
+#features h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
 /**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $blue-color;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+ Special Thanks
+*/
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+#special-thanks {
+  background: #fff;
+  color: #000;
+  padding: $spacing-unit 0;
 }
 
-.site-title {
-    font-size: 26px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+#special-thanks h1 {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
 }
 
-.site-title:hover, .site-title:visited, .site-title:link, .site-title:active {
-    text-decoration: none;
+/**
+About Freshcocoa
+*/
+
+#about-freshcocoa {
+  padding: $spacing-unit 0;
+  background: #20262f;
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+#about-freshcocoa h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
 }
 
-
+#about-freshcocoa p {
+  color: #ccc;
+  text-align: center;
+}
 
 /**
  * Site footer
  */
+
+#footer-cr {
+  color: #ccc;
+}
+
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    background: #20262f;
+    color: #c5d0de;
     padding: $spacing-unit 0;
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 25px;
+    color: #fff;
     margin-bottom: $spacing-unit / 2;
+}
+
+.footer-news-heading {
+    font-size: 25px;
+    color: #fff;
 }
 
 .contact-list,
@@ -114,7 +99,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: #c5d0de;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -167,11 +152,15 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0 0;
 }
 
 .page-heading {
     font-size: 20px;
+}
+
+.post {
+  padding-top: 30px;
 }
 
 .post-list {
@@ -193,32 +182,66 @@
     font-size: 24px;
 }
 
+#app-icon {
+  float: left;
+  margin: -2em 40px 120px 0;
+  width: 220px;
+  height: 220px;
+  z-index: 5;
+}
+
 #app-header {
-    text-align: center;
+
 }
 
 #app-header h1 {
-    font-size: 72px;
-    font-weight: 500;
-    margin-bottom: 0px;
+  font-weight: 200;
+  font-size: 64px;
+  margin: .5em 0 0 240px;
+  position: relative;
+  font-family: 'helvetica neu', helvetica, sans-serif;
 }
 
-#download {
-    margin-bottom: 30px;
+#app-header h2 {
+  color: #898989;
 }
 
-#app-header #devices {
-    width: 100%;
-    height: 100%;
-    max-width: 1284px;
-    margin-bottom: 30px;
+#download-app-link {
+  display: block;
+  margin-top: 30px;
 }
+
+#download-app-link #download {
+
+}
+
+#app-devices {
+  text-align: center;
+}
+
+#app-devices #devices {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+// Features
 
 .app-header-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: #c5d0de;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+}
+
+#special-thanks .app-header-col-wrapper {
+  color: #000;
+}
+
+#special-thanks p {
+  text-align: center;
 }
 
 .app-header-col {
@@ -265,7 +288,7 @@
 
 .app-header-col h3 {
     font-weight: 500;
-    color: $text-color;
+    color: #fff;
 }
 
 /**
@@ -314,10 +337,30 @@
 }
 
 img[alt=me] {
-    border-radius: 160px;
-    -webkit-border-radius: 160px;
-    -moz-border-radius: 160px;
-    width: 320px;
+    border-radius: 125px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img[alt=adrian] {
+    border-radius: 125px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img[alt=peter] {
+    border-radius: 125px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto
