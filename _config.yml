@@ -1,7 +1,7 @@
 # Site settings
-title: Freshcocoa
+title: Some Robots
 baseurl: ""
-url: "http://www.freshcocoa.co.uk"
+url: "http://www.somerobots.com"
 
 # Build settings
 markdown: kramdown
@@ -9,13 +9,13 @@ markdown: kramdown
 # People
 matt_name: Matthew Wilkinson
 matt_title: Developer and Founder
-matt_email: matt@freshcocoa.co.uk
+matt_email: matt@somerobots.com
 
 # Site Footer
 footer_title: Support
-support_issue_tracker_title: gitlab.com/Freshcocoa/Trident
-support_issue_tracker_url: https://gitlab.com/Freshcocoa/Trident
-support_email: matt@freshcocoa.co.uk
-support_twitter_username: freshcocoaMatt
+support_issue_tracker_title: gitlab.com/Somerobots/Trident
+support_issue_tracker_url: https://gitlab.com/Somerobots/Trident
+support_email: matt@somerobots.com
+support_twitter_username: somerobots
 support_description: >
   If you have any problems with Trident you can use the public issue tracker and raise an issue, or contact Matt directly with Twitter and Email.
