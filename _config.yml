@@ -13,8 +13,8 @@ matt_email: matt@somerobots.com
 
 # Site Footer
 footer_title: Support
-support_issue_tracker_title: gitlab.com/Somerobots/Trident
-support_issue_tracker_url: https://gitlab.com/Somerobots/Trident
+support_issue_tracker_title: gitlab.com/somerobots/Trident
+support_issue_tracker_url: https://gitlab.com/somerobots/Trident
 support_email: matt@somerobots.com
 support_twitter_username: somerobots
 support_description: >
