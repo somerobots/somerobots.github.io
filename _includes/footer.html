@@ -9,7 +9,7 @@
             <p class="text">{{ site.support_description }}</p>
             {% for page in site.pages %}
               {% if page.title %}
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> <br/>
               {% endif %}
             {% endfor %}
         </div>
