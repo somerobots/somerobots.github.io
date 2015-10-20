@@ -6,9 +6,16 @@ date:   2015-08-24 11:27:21
 
 {% for page in site.posts %}
   {% if page.title %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> <br/>
-    {% if page.short %}
-    <p> {{ page.short }} </p>
-    {% endif %}
+  <div class="post">
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+      <header class="post-header">
+        <h3 class="post-title">{{ page.title }}</h3>
+      </header>
+    </a>
+    <article class="post-content">
+        <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+        {{ page.content }}
+    </article>
+  </div>
   {% endif %}
 {% endfor %}
