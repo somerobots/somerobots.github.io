@@ -1,0 +1,14 @@
+---
+layout: page
+title:  "Latest News"
+date:   2015-08-24 11:27:21
+---
+
+{% for page in site.posts %}
+  {% if page.title %}
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> <br/>
+    {% if page.short %}
+    <p> {{ page.short }} </p>
+    {% endif %}
+  {% endif %}
+{% endfor %}
