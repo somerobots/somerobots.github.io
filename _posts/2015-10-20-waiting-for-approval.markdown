@@ -11,6 +11,6 @@ Development doesn't stop here though, I've already started working on the next r
 
 For our beta testers, oops yes I've broken the current build in HockeyApp, sorry about that! Expect a much improved build in a week or so.
 
-## Sneak Peak (of version 1.1)
+### Sneak Peak (of version 1.1)
 
-{% video featured wide {{ site.baseurl }}/assets/sneak_peak.mp4 269 480 {{ site.baseurl }}/assets/sneak_peak.png preload:auto click_to_play_video:true %}
+<video src="{{ site.baseurl }}/assets/sneak_peak.mp4" poster="{{ site.baseurl }}/assets/sneak_peak.png" width="269" height="480" controls preload></video>
