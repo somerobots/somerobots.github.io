@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Waiting for approval"
-short:  "Well its been a long road to finally get to this point, version 1.0 is now waiting for approval! For all our lovely Beta testers, when the App is on the store you should receive a promo code as a small thankyou for testing."
 date:   2015-10-20 11:27:21
 categories: news update
+comments: true
 ---
 Well its been a long road to finally get to this point, version 1.0 is now waiting for approval! For all the lovely Beta testers, when the App is on the store you should receive a promo code as a small thankyou for testing.
 
