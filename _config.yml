@@ -2,7 +2,7 @@
 title: Some Robots
 baseurl: ""
 url: "http://www.somerobots.com"
-
+disqusid: "somerandomrobot"
 # Build settings
 markdown: kramdown
 
