@@ -46,6 +46,15 @@ layout: landing
 
     <script>
       $(document).ready(function(){
+
+        $.fn.preload = function() {
+            this.each(function(){
+                $('<img/>')[0].src = this;
+            });
+        }
+
+        $(['assets/version1_images/1.png','assets/version1_images/8.png','assets/version1_images/2.png', 'assets/version1_images/5.png']).preload();
+
         $("#device-1-description").hover(function(){
           $("#device-image").attr("src", "assets/version1_images/1.png");
         });
