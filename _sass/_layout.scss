@@ -4,14 +4,31 @@
 }
 
 #trident-logo {
-  color: #111;
-  font-weight: 200;
+
+}
+
+#trident-logo strong {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+  font-weight: 400;
   font-size: 64px;
   text-align: center;
   @include media-query($on-palm) {
-    font-weight: 100;
+    font-weight: 150;
     font-size: 32px;
   }
+}
+
+#trident-logo small {
+    color: #ccc;
+    font-size: 44px;
+    @include media-query($on-palm) {
+      font-weight: 100;
+      font-size: 22px;
+    }
 }
 
 #features {
@@ -20,6 +37,7 @@
 }
 
 #features h1 {
+  font-weight: 400;
   color: #fff;
   text-align: center;
   font-size: 32px;
@@ -46,19 +64,37 @@ About Freshcocoa
 */
 
 #about-freshcocoa {
-  padding: $spacing-unit 0;
-  background: #20262f;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  background: #007AFF;
+  text-align: center;
 }
 
 #about-freshcocoa h1 {
   color: #fff;
-  text-align: center;
   font-size: 32px;
+  @include media-query($on-palm) {
+    font-weight: 150;
+    font-size: 22px;
+  }
 }
 
-#about-freshcocoa p {
-  color: #ccc;
-  text-align: center;
+#about-freshcocoa h2 {
+  color: #fff;
+  font-size: 25px;
+  @include media-query($on-palm) {
+    font-weight: 100;
+    font-size: 18px;
+  }
+}
+
+#about-freshcocoa h3 {
+  color: #fff;
+  font-size: 20px;
+  @include media-query($on-palm) {
+    font-weight: 100;
+    font-size: 15px;
+  }
 }
 
 /**
@@ -141,8 +177,6 @@ About Freshcocoa
     }
 }
 
-
-
 /**
  * Page content
  */
@@ -217,18 +251,18 @@ About Freshcocoa
 
 #app-header h2 {
   color: #898989;
+  text-align: center;
   @include media-query($on-palm) {
     font-size: 20px;
   }
-  text-align: center;
 }
 
 #app-header h3 {
   color: #898989;
+  text-align: center;
   @include media-query($on-palm) {
     font-size: 15px;
   }
-  text-align: center;
 }
 
 #download-app-link {
@@ -239,24 +273,80 @@ About Freshcocoa
   text-align: center;
 }
 
-#download-app-link #download {
-
-}
-
 #app-devices {
-  text-align: center;
+  width: 650px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#app-devices #devices {
-  width: 100%;
-  height: 100%;
-  max-width: 800px;
-  margin-bottom: 30px;
+@include media-query($on-palm) {
+    #app-devices {
+        width: 100%;
+    }
+}
+
+.app-device {
+  margin-left: - $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
+.app-devices-col-wrapper {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    font-size: 16px;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.app-devices-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.app-devices-col-1 {
+    text-align: right;
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-palm) {
+    .app-devices-col-1 {
+        float: none;
+        text-align: center;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+.app-devices-col-2 {
+    text-align: left;
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+    @include media-query($on-palm) {
+        display: none;
+    }
+}
+
+.device-description:hover {
+  background-color: #E9E9E9;
+}
+
+.app-devices-col-2 div {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.app-devices-col-2 h3 {
+    font-weight: 500;
 }
 
 // Features
 
 .app-header-col-wrapper {
+    margin-top: $spacing-unit;
     font-size: 15px;
     color: #c5d0de;
     margin-left: -$spacing-unit / 2;
@@ -364,13 +454,21 @@ About Freshcocoa
 }
 
 img[alt=me] {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
     border-radius: 125px;
     -webkit-border-radius: 125px;
     -moz-border-radius: 125px;
     width: 250px;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    @include media-query($on-palm) {
+        border-radius: 85px;
+        -webkit-border-radius: 85px;
+        -moz-border-radius: 85px;
+        width: 170px;
+    }
 }
 
 img[alt=adrian] {

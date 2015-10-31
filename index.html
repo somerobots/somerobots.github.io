@@ -2,68 +2,105 @@
 layout: landing
 ---
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <div class="home">
 
     <section id="app-header">
-      <img id="app-icon" src="assets/AppIcon.png" width="200" height="200" alt="Trident App">
+      <!-- <img id="app-icon" src="assets/AppIcon.png" width="200" height="200" alt="Trident App"> -->
       <h1 id="trident-logo"><strong>Trident</strong> <small>for iOS</small></h1>
       <h2>A powerful GitLab client for your pocket that has been designed from the ground up for iOS.</h2>
       <h3>Made by Some Robots Ltd</h3>
+      <!-- <a id="download-app-link" href="https://itunes.apple.com/us/app/trident-for-gitlab/id983962683?ls=1&mt=8" title="Trident for GitLab on the App Store">
+      <img id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
+      </a> -->
     </section>
 
     <section id="app-devices">
       <div class="wrapper">
-        <img id="devices" src="assets/Trident_iPhone.jpg" width="1935" height="1253" alt="Trident on Devices">
-        <a id="download-app-link" href="https://itunes.apple.com/us/app/trident-for-gitlab/id983962683?ls=1&mt=8" title="Trident for GitLab on the App Store">
-            <img style="display:none;" id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
-        </a>
+        <div class="app-devices-col-wrapper">
+            <div class="app-devices-col  app-devices-col-1">
+              <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
+            </div>
+            <div class="app-devices-col  app-devices-col-2">
+              <div id="device-1-description" class="device-description">
+                <h3>Dashboard and History</h3>
+                <p>See all recent project events, go directly to issues from the history.</p>
+              </div>
+              <div id="device-2-description" class="device-description">
+                <h3>Merge Requests</h3>
+                <p>Compose, view, update, comment and approve merge requests. Dive in the detail and see exactly what's changing with the diff view.</p>
+              </div>
+              <div id="device-3-description" class="device-description">
+                <h3>Issues, Milestones and Labels</h3>
+                <p>Create, edit, comment and close/reopen issues. Organise issues with labels. Track your progress with milestones.</p>
+              </div>
+              <div id="device-4-description" class="device-description">
+                <h3>Project Files and Syntax Highlighting</h3>
+                <p>Project files and folders can be browsed from any commit. Files support syntax highlighting for beautiful display.</p>
+              </div>
+            </div>
+        </div>
       </div>
     </section>
 
+    <script>
+      $(document).ready(function(){
+        $("#device-1-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/1.png");
+        });
+        $("#device-2-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/8.png");
+        });
+        $("#device-3-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/2.png");
+        });
+        $("#device-4-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/5.png");
+        });
+      });
+    </script>
+
     <section id="features">
       <div class="wrapper">
-        <h1><strong>Features</strong></h1>
         <div class="app-header-col-wrapper">
             <div class="app-header-col  app-header-col-1">
-                <h3>Dashboard and History</h3>
-                <p>All recent project events (for the past three days) can be viewed from the Dashboard.
-                  Individual projects have their own history tab, allowing you to go back further in time.</p>
-            </div>
-            <div class="app-header-col  app-header-col-2">
+              <div>
                 <h3>Multiple GitLab Hosts</h3>
                 <p>Trident allows you to add multiple GitLab hosts, so you can easily switch host without re-entering login details.</p>
-            </div>
-            <div class="app-header-col  app-header-col-3">
-                <h3>Issues, Milestones and Labels</h3>
-                <p>Easily create, edit, comment and close/reopen issues. Organise your issues with labels. Track your progress with milestones.</p>
-            </div>
-        </div>
-        <div class="app-header-col-wrapper">
-            <div class="app-header-col  app-header-col-1">
-                <h3>Project Files and Syntax Highlighting</h3>
-                <p>Project files and folders can be easily browsed from a specific branch or commit. Source files support syntax highlighting (we are adding more languages with later releases).</p>
+              </div>
             </div>
             <div class="app-header-col  app-header-col-2">
-              <h3>Merge Requests</h3>
-              <p>Compose, view, update, comment and approve merge requests. Dive in the detail and see exactly what's changing with the diff view.</p>
-            </div>
-            <div class="app-header-col  app-header-col-3">
+              <div>
                 <h3>Nightmode and Variable Font Size</h3>
                 <p>Enable nightmode for comfortable reading at night. Change the font size to something easier to read.</p>
+              </div>
+            </div>
+            <div class="app-header-col  app-header-col-3">
+              <div>
+                <h3>Supports GitLab 7x and above</h3>
+                <p>Trident has been well tested on GitLab 7x and above. Though, if you see bugs, we're interested in your feedback!</p>
+              </div>
             </div>
         </div>
         <div class="app-header-col-wrapper">
             <div class="app-header-col  app-header-col-1">
+              <div>
                 <h3>Self Signed Certificate Support</h3>
                 <p>If you don't use a standard Certificate Authority, don't worry! Trident will prompt you to trust a certificate based on the SHA1 fingerprint.</p>
+              </div>
             </div>
             <div class="app-header-col  app-header-col-2">
+              <div>
                 <h3>App Transport Security Enabled</h3>
-                <p>Improved security for gitlab.com connections using forward secrecy. Trident will force TLS 1.2 minimum on all secure connections.</p>
+                <p>Improved security for gitlab.com connections using Certificate Pinning and TLS 1.2 Forward Secrecy. Trident will force TLS 1.2 minimum on all secure connections.</p>
+              </div>
             </div>
-            <div class="app-header-col  app-header-col-1">
-                <h3>Supports GitLab 7x and above</h3>
-                <p>Trident has been well tested on GitLab 7x and above. Though, if you see bugs, we're interested in your feedback!</p>
+            <div class="app-header-col  app-header-col-3">
+              <div>
+                <h3>Feedback appreicated</h3>
+                <p>Thought of an awesome feature, found a bug? Let me know!</p>
+              </div>
             </div>
         </div>
       </div>
@@ -71,10 +108,10 @@ layout: landing
 
     <section id="about-freshcocoa">
       <div class="wrapper">
-        <h1><small>Some Robots is one human, who makes apps for fun.</small></h1>
+        <h1>Some Robots is just one human</h1>
+        <h3>Do a few things and do them really well</h3>
         <img alt="me" src="assets/me.jpg">
-        <br>
-        <p>This is Matt</p>
+        <h2>This is Matt</h2>
       </div>
     </section>
 
