@@ -24,20 +24,38 @@ layout: landing
             </div>
             <div class="app-devices-col  app-devices-col-2">
               <div id="device-1-description" class="device-description">
-                <h3>Dashboard and History</h3>
-                <p>See all recent project events, go directly to issues from the history.</p>
+                <h3>Project History</h3>
+                <p>See all recent project events, recent pushes and milestone progress.</p>
               </div>
               <div id="device-2-description" class="device-description">
                 <h3>Merge Requests</h3>
-                <p>Compose, view, update, comment and approve merge requests. Dive in the detail and see exactly what's changing with the diff view.</p>
+                <p>Compose, view, update, comment and approve merge requests.</p>
               </div>
               <div id="device-3-description" class="device-description">
                 <h3>Issues, Milestones and Labels</h3>
-                <p>Create, edit, comment and close/reopen issues. Organise issues with labels. Track your progress with milestones.</p>
+                <p>Create, edit, close and reopen issues. Organise issues with labels.</p>
               </div>
               <div id="device-4-description" class="device-description">
                 <h3>Project Files and Syntax Highlighting</h3>
                 <p>Project files and folders can be browsed from any commit. Files support syntax highlighting for beautiful display.</p>
+              </div>
+            </div>
+            <div class="app-devices-col  app-devices-col-3">
+              <div id="device-5-description" class="device-description">
+                <h3>Dashboard</h3>
+                <p>Track progress accross multiple projects in the dashboard.</p>
+              </div>
+              <div id="device-6-description" class="device-description">
+                <h3>Diff View</h3>
+                <p>Dive in the detail and see exactly what's changing with the diff view.</p>
+              </div>
+              <div id="device-7-description" class="device-description">
+                <h3>Comment on issues</h3>
+                <p>See the detail of the issue, tag team members in comments and solve problems together.</p>
+              </div>
+              <div id="device-8-description" class="device-description">
+                <h3>Nightmode</h3>
+                <p>Enable nightmode for comfortable reading at night. Plus it looks really cool.</p>
               </div>
             </div>
         </div>
@@ -53,18 +71,30 @@ layout: landing
             });
         }
 
-        $(['assets/version1_images/1.png','assets/version1_images/8.png','assets/version1_images/2.png', 'assets/version1_images/5.png']).preload();
+        $(['assets/version1_images/1.png','assets/version1_images/10.png','assets/version1_images/9.png','assets/version1_images/6.png','assets/version1_images/4.png','assets/version1_images/8.png','assets/version1_images/2.png', 'assets/version1_images/5.png']).preload();
 
         $("#device-1-description").hover(function(){
           $("#device-image").attr("src", "assets/version1_images/1.png");
         });
         $("#device-2-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/8.png");
+          $("#device-image").attr("src", "assets/version1_images/6.png");
         });
         $("#device-3-description").hover(function(){
           $("#device-image").attr("src", "assets/version1_images/2.png");
         });
         $("#device-4-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/4.png");
+        });
+        $("#device-5-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/10.png");
+        });
+        $("#device-6-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/8.png");
+        });
+        $("#device-7-description").hover(function(){
+          $("#device-image").attr("src", "assets/version1_images/9.png");
+        });
+        $("#device-8-description").hover(function(){
           $("#device-image").attr("src", "assets/version1_images/5.png");
         });
       });
@@ -81,8 +111,8 @@ layout: landing
             </div>
             <div class="app-header-col  app-header-col-2">
               <div>
-                <h3>Nightmode and Variable Font Size</h3>
-                <p>Enable nightmode for comfortable reading at night. Change the font size to something easier to read.</p>
+                <h3>Variable Font Size</h3>
+                <p>Project files and diff views support variable font size, change the font size to something easier to read.</p>
               </div>
             </div>
             <div class="app-header-col  app-header-col-3">
