@@ -284,7 +284,6 @@ About Freshcocoa
 }
 
 .app-device {
-  margin-left: - $spacing-unit;
   margin-bottom: $spacing-unit;
 }
 
@@ -308,30 +307,28 @@ About Freshcocoa
     width:         calc(33% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-palm) {
-    .app-devices-col-1 {
-        float: none;
-        text-align: center;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
 .app-devices-col-2 {
     text-align: left;
     width: -webkit-calc(33% - (#{$spacing-unit} / 2));
     width:         calc(33% - (#{$spacing-unit} / 2));
-    @include media-query($on-palm) {
-        display: none;
-    }
 }
 
 .app-devices-col-3 {
     text-align: left;
     width: -webkit-calc(33% - (#{$spacing-unit} / 2));
     width:         calc(33% - (#{$spacing-unit} / 2));
-    @include media-query($on-palm) {
-        display: none;
+}
+
+@include media-query($on-laptop) {
+    .app-devices-col-1,
+    .app-devices-col-2,
+    .app-devices-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+    .app-devices-col-1 {
+        float: none;
+        text-align: center;
     }
 }
 
