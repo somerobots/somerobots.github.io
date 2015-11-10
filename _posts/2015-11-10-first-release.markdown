@@ -7,4 +7,4 @@ comments: true
 ---
 Very happy to release the first version of Trident to the app store!
 
-I'm working on the next release now, adding Notifications and VPN support, as well as bug fixes!
+I'm working on the next release now, adding Notifications as well as bug fixes!
