@@ -9,11 +9,17 @@ layout: landing
     <section id="app-header">
       <!-- <img id="app-icon" src="assets/AppIcon.png" width="200" height="200" alt="Trident App"> -->
       <h1 id="trident-logo"><strong>Trident</strong></h1>
-      <h2>A powerful GitLab and GitHub client that has been designed from the ground up for iOS.</h2>
-      <h3>Made by Some Robots</h3>
-      <a id="download-app-link" href="https://itunes.apple.com/us/app/trident-for-gitlab/id983962683?ls=1&mt=8" title="Trident for GitLab on the App Store">
-      <img id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
-      </a>
+      <h2>The next generation Git client for iOS.</h2>
+      <h3>Built for GitLab, and now an early preview for GitHub, for the first time you can work on the go.</h3>
+    </section>
+
+    <section id="main-product">
+      <div class="wrapper">
+        <img src="assets/version14_images/MainProductImage.png" srcset="assets/version14_images/MainProductImage@2x.png 2x">
+        <a id="download-app-link" href="https://itunes.apple.com/us/app/trident-for-gitlab/id983962683?ls=1&mt=8" title="Trident for GitLab on the App Store">
+        <img id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
+        </a>
+      </div>
     </section>
 
     <section id="app-devices">
@@ -23,6 +29,12 @@ layout: landing
               <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
             </div>
             <div class="app-devices-col  app-devices-col-2">
+              <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
+            </div>
+            <div class="app-devices-col  app-devices-col-3">
+              <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
+            </div>
+            <!-- <div class="app-devices-col  app-devices-col-2">
               <div id="device-1-description" class="device-description">
                 <h3>Project History</h3>
                 <p>See all recent project events, recent pushes and milestone progress.</p>
@@ -57,48 +69,10 @@ layout: landing
                 <h3>Nightmode</h3>
                 <p>Enable nightmode for comfortable reading at night. Plus it looks really cool.</p>
               </div>
-            </div>
+            </div> -->
         </div>
       </div>
     </section>
-
-    <script>
-      $(document).ready(function(){
-
-        $.fn.preload = function() {
-            this.each(function(){
-                $('<img/>')[0].src = this;
-            });
-        }
-
-        $(['assets/version1_images/1.png','assets/version1_images/10.png','assets/version1_images/9.png','assets/version1_images/6.png','assets/version1_images/4.png','assets/version1_images/8.png','assets/version1_images/2.png', 'assets/version1_images/5.png']).preload();
-
-        $("#device-1-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/1.png");
-        });
-        $("#device-2-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/6.png");
-        });
-        $("#device-3-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/2.png");
-        });
-        $("#device-4-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/4.png");
-        });
-        $("#device-5-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/10.png");
-        });
-        $("#device-6-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/8.png");
-        });
-        $("#device-7-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/9.png");
-        });
-        $("#device-8-description").hover(function(){
-          $("#device-image").attr("src", "assets/version1_images/5.png");
-        });
-      });
-    </script>
 
     <section id="features">
       <div class="wrapper">
