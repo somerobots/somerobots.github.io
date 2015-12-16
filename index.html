@@ -1,39 +1,98 @@
 ---
 layout: landing
 ---
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <div class="home">
 
     <section id="app-header">
       <!-- <img id="app-icon" src="assets/AppIcon.png" width="200" height="200" alt="Trident App"> -->
       <h1 id="trident-logo"><strong>Trident</strong></h1>
       <h2>The next generation Git client for iOS.</h2>
-      <h3>Built for GitLab, and now an early preview for GitHub, for the first time you can work on the go.</h3>
+      <h3>Built for GitLab, and now an <u>early preview</u> for GitHub, for the first time you can truly handle issues on the go.</h3>
     </section>
 
     <section id="main-product">
       <div class="wrapper">
-        <img src="assets/version14_images/MainProductImage.png" srcset="assets/version14_images/MainProductImage@2x.png 2x">
+        <img id="main-product-image" src="assets/version14_images/MainProductImage.png" srcset="assets/version14_images/MainProductImage@2x.png 2x">
         <a id="download-app-link" href="https://itunes.apple.com/us/app/trident-for-gitlab/id983962683?ls=1&mt=8" title="Trident for GitLab on the App Store">
-        <img id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
+          <img id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
         </a>
       </div>
     </section>
 
     <section id="app-devices">
       <div class="wrapper">
+        <h2>Issues tamed in Markdown.</h2>
         <div class="app-devices-col-wrapper">
+            <div class="app-devices-col  app-devices-col-3">
+              <img id="device-image" class="app-device" src="assets/version14_images/History.png" srcset="assets/version14_images/History@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>Keep an eye on everything</h3>
+                <p>Your project history can show you issues, merge requests, git push events. Go directly from the history feed to the event.</p>
+              </div>
+            </div>
             <div class="app-devices-col  app-devices-col-1">
-              <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
+              <img id="device-image" class="app-device" src="assets/version14_images/Issues.png" srcset="assets/version14_images/Issues@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>Navigate your issues</h3>
+                <p>Search for your issue by Author, ID or Title, paginate over thousands of issues, Trident can handle it.</p>
+              </div>
             </div>
             <div class="app-devices-col  app-devices-col-2">
-              <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
+              <img id="device-image" class="app-device" src="assets/version14_images/IssueDetails.png" srcset="assets/version14_images/IssueDetails@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>See the detail</h3>
+                <p>All important issue details shown, collaborate with your colleagues in the chat bar.</p>
+              </div>
+            </div>
+        </div>
+        <h2>Merge requests rendered beautifully.</h2>
+        <div class="app-devices-col-wrapper">
+            <div class="app-devices-col  app-devices-col-1">
+              <img id="device-image" class="app-device" src="assets/version14_images/MergeRequests.png" srcset="assets/version14_images/MergeRequests@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>Merge requests</h3>
+                <p>Search for your merge request by Author, ID or Title, paginate over thousands of merge requests.</p>
+              </div>
+            </div>
+            <div class="app-devices-col  app-devices-col-2">
+              <img id="device-image" class="app-device" src="assets/version14_images/MergeRequest.png" srcset="assets/version14_images/MergeRequest@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>Find the best solution</h3>
+                <p>See the proposed merge request, discuss the solution with colleagues.</p>
+              </div>
             </div>
             <div class="app-devices-col  app-devices-col-3">
-              <img id="device-image" class="app-device" src="assets/version1_images/1.png" style="width:300px;height:606px;"></img>
+              <img id="device-image" class="app-device" src="assets/version14_images/Changes.png" srcset="assets/version14_images/Changes@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>Review changes</h3>
+                <p>All merge request changes rendered with a unified diff view.</p>
+              </div>
             </div>
+        </div>
+        <h2>View files from any time.</h2>
+        <div class="app-devices-col-wrapper">
+            <div class="app-devices-col  app-devices-col-1">
+              <img id="device-image" class="app-device" src="assets/version14_images/Files.png" srcset="assets/version14_images/Files@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>View your files</h3>
+                <p>Select your desired branch and commit, view all files from that point in history.</p>
+              </div>
+            </div>
+            <div class="app-devices-col  app-devices-col-2">
+              <img id="device-image" class="app-device" src="assets/version14_images/File.png" srcset="assets/version14_images/File@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>View source files</h3>
+                <p>Trident supports syntax highlighting, we have big ambitions to make this even better in future...</p>
+              </div>
+            </div>
+            <div class="app-devices-col  app-devices-col-3">
+              <img id="device-image" class="app-device" src="assets/version14_images/FileNM.png" srcset="assets/version14_images/FileNM@2x.png 2x" style="width:300px;height:606px;"></img>
+              <div class="text-left">
+                <h3>Nightmode</h3>
+                <p>It just looks cool!</p>
+              </div>
+            </div>
+        </div>
             <!-- <div class="app-devices-col  app-devices-col-2">
               <div id="device-1-description" class="device-description">
                 <h3>Project History</h3>
@@ -76,6 +135,7 @@ layout: landing
 
     <section id="features">
       <div class="wrapper">
+        <h2>Other notable features.</h2>
         <div class="app-header-col-wrapper">
             <div class="app-header-col  app-header-col-1">
               <div>
@@ -100,13 +160,13 @@ layout: landing
             <div class="app-header-col  app-header-col-1">
               <div>
                 <h3>Self Signed Certificate Support</h3>
-                <p>If you don't use a standard Certificate Authority, don't worry! Trident will prompt you to trust a certificate based on the SHA1 fingerprint.</p>
+                <p>If you don't use a standard Certificate Authority, don't worry! Trident will prompt you to trust a certificate based on the SHA1 fingerprint. Your certificate will then be pinned.</p>
               </div>
             </div>
             <div class="app-header-col  app-header-col-2">
               <div>
                 <h3>App Transport Security Enabled</h3>
-                <p>Improved security for gitlab.com connections using Certificate Pinning and TLS 1.2 Forward Secrecy. Trident will force TLS 1.2 minimum on all secure connections.</p>
+                <p>Improved security for gitlab.com and github.com connections using Certificate Pinning and TLS 1.2 Forward Secrecy. Trident will force TLS 1.2 minimum on all secure connections.</p>
               </div>
             </div>
             <div class="app-header-col  app-header-col-3">

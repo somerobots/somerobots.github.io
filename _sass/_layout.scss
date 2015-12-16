@@ -8,8 +8,8 @@
 }
 
 #trident-logo strong {
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  color: #1fa8fc;
+  background-image: -webkit-linear-gradient(92deg,#1780fb,#1fa8fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 60s infinite linear;
@@ -32,7 +32,7 @@
 }
 
 #features {
-  background: #333c47;
+  background: #333333;
   padding: $spacing-unit 0;
 }
 
@@ -258,8 +258,27 @@ body, input, textarea, select, button {
 }
 
 #app-header h2 {
-  color: #898989;
+  color: #333;
   text-align: center;
+  font-size: 37px;
+  @include media-query($on-palm) {
+    font-size: 20px;
+  }
+}
+
+#app-devices h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 37px;
+  @include media-query($on-palm) {
+    font-size: 20px;
+  }
+}
+
+#features h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 37px;
   @include media-query($on-palm) {
     font-size: 20px;
   }
@@ -273,16 +292,28 @@ body, input, textarea, select, button {
   }
 }
 
+#main-product {
+  text-align: center;
+}
+
+#main-product-image {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #download-app-link {
   display: block;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 #app-devices {
-
+  color: #fff;
+  padding-top: 30px;
+  background-color: #2b2b2b;
 }
 
 @include media-query($on-palm) {
@@ -297,10 +328,13 @@ body, input, textarea, select, button {
 
 .app-devices-col-wrapper {
     margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
     font-size: 16px;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .app-devices-col {
