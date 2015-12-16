@@ -207,6 +207,14 @@ About Freshcocoa
     font-size: 24px;
 }
 
+body, input, textarea, select, button {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga', 'kern'
+}
+
 #app-icon {
   width: 200px;
   height: 200px;
