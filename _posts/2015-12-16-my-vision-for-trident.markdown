@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Outlining my vision for Trident"
+title:  "My vision for Trident"
 date:   2015-12-16 11:27:21
 categories: news update
 comments: true
