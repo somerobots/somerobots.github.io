@@ -344,19 +344,19 @@ body, input, textarea, select, button {
 }
 
 .app-devices-col-1 {
-    text-align: right;
+    text-align: center;
     width: -webkit-calc(33% - (#{$spacing-unit} / 2));
     width:         calc(33% - (#{$spacing-unit} / 2));
 }
 
 .app-devices-col-2 {
-    text-align: left;
+    text-align: center;
     width: -webkit-calc(33% - (#{$spacing-unit} / 2));
     width:         calc(33% - (#{$spacing-unit} / 2));
 }
 
 .app-devices-col-3 {
-    text-align: left;
+    text-align: center;
     width: -webkit-calc(33% - (#{$spacing-unit} / 2));
     width:         calc(33% - (#{$spacing-unit} / 2));
 }
@@ -368,10 +368,10 @@ body, input, textarea, select, button {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
-    .app-devices-col-1 {
-        float: none;
-        text-align: center;
-    }
+    // .app-devices-col-1 {
+    //     float: none;
+    //     text-align: center;
+    // }
 }
 
 .device-description {
@@ -442,7 +442,6 @@ body, input, textarea, select, button {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
-
     .app-header-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
