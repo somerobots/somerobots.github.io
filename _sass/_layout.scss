@@ -338,6 +338,11 @@ body, input, textarea, select, button {
 
 #apps svg {
   border-radius: 3em;
+  @include media-query($on-palm) {
+    border-radius: 1.5em;
+    width: 120px;
+    height: 120px;
+  }
 }
 
 #apps svg:hover #trident_icon {
