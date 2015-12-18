@@ -18,8 +18,8 @@ Apples Core Data (an 'object graph management' tool that can persist data to SQL
 - Only access and set properties of ManagedObjects on the thread of the context that owns it (typically using ```performBlock```).
 - Avoid use of nested ```performBlockAndWait``` to prevent deadlock conditions.
 - It's safe to pass ManagedObjects across threads, but only ```objectID``` is safe to access.
-- Use ```objectID``` to find a ManagedObjects from a different Context.
-- Use the ```URIRepresentation``` property of ```objectID``` to fetch objects across different Persistent Stores.
+- Use ```objectID``` to find a ManagedObject from a different Context.
+- Use the ```URIRepresentation``` property of ```objectID``` to an fetch object across different Persistent Stores.
 
 If you're not certain your app is following those rules, there's a great debug mode now available for iOS - read this excellent post [on how to enable it](http://oleb.net/blog/2014/06/core-data-concurrency-debugging/).
 
