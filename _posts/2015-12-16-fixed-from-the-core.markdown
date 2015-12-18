@@ -15,7 +15,7 @@ Apples Core Data (an 'object graph management' tool that can persist data to SQL
 
 *Core Data Threading rules*
 
-- Only access and set properties of ManagedObjects on the thread of the context (typically using ```performBlock``` on the Context owning the ManagedObject).
+- Only access and set properties of ManagedObjects on the thread of the context that owns it (typically using ```performBlock```).
 - Avoid use of nested ```performBlockAndWait``` to prevent deadlock conditions.
 - It's safe to pass ManagedObjects across threads, but only ```objectID``` is safe to access.
 - Use ```objectID``` to find a ManagedObjects from a different Context.
