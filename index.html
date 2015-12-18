@@ -1,190 +1,48 @@
 ---
-layout: landing
+layout: landing2
 ---
 <div class="home">
 
     <section id="app-header">
       <!-- <img id="app-icon" src="assets/AppIcon.png" width="200" height="200" alt="Trident App"> -->
-      <h1 id="trident-logo"><strong>Trident</strong></h1>
-      <h2>The next generation Git client for iOS.</h2>
-      <h3>Built for GitLab, and now an <a href="http://somerobots.com/news/update/2015/12/17/github-preview.html">early preview</a> for GitHub, for the first time you can truly handle issues on the go.</h3>
+      <h1 id="trident-logo"><strong>Some Robots</strong></h1>
+      <h2>Building great tools for software engineers.</h2>
+      <h3>Introducing Trident, an iOS App for GitLab and GitHub.</h3>
     </section>
 
-    <section id="main-product">
-      <div class="wrapper">
-        <img id="main-product-image" src="assets/version14_images/MainProductImage.png" srcset="assets/version14_images/MainProductImage@2x.png 2x">
-        <a id="download-app-link" href="https://itunes.apple.com/us/app/trident-for-gitlab/id983962683?ls=1&mt=8" title="Trident for GitLab on the App Store">
-          <img id="download" src="assets/appstore.png" alt="Download on the App Store" width="237" height="82">
-        </a>
-      </div>
-    </section>
 
-    <section id="app-devices">
-      <div class="wrapper">
-        <h2>Issues tamed with Markdown.</h2>
-        <div class="app-devices-col-wrapper">
-            <div class="app-devices-col  app-devices-col-3">
-              <img id="device-image" class="app-device" src="assets/version14_images/History.png" srcset="assets/version14_images/History@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>Keep an eye on everything</h3>
-                <p>Your project history can show you issues, merge requests, git push events. Go directly from the history feed to the event.</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-1">
-              <img id="device-image" class="app-device" src="assets/version14_images/Issues.png" srcset="assets/version14_images/Issues@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>Navigate your issues</h3>
-                <p>Search for your issue by Author, ID or Title, paginate over thousands of issues, Trident can handle it.</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-2">
-              <img id="device-image" class="app-device" src="assets/version14_images/IssueDetails.png" srcset="assets/version14_images/IssueDetails@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>See the detail</h3>
-                <p>All important issue details shown, collaborate with your colleagues in the chat bar.</p>
-              </div>
-            </div>
-        </div>
-        <h2>Merge requests rendered beautifully.</h2>
-        <div class="app-devices-col-wrapper">
-            <div class="app-devices-col  app-devices-col-1">
-              <img id="device-image" class="app-device" src="assets/version14_images/MergeRequests.png" srcset="assets/version14_images/MergeRequests@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>Merge requests</h3>
-                <p>Search for your merge request by Author, ID or Title, paginate over thousands of merge requests.</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-2">
-              <img id="device-image" class="app-device" src="assets/version14_images/MergeRequest.png" srcset="assets/version14_images/MergeRequest@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>Find the best solution</h3>
-                <p>See the proposed merge request, discuss the solution with colleagues.</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-3">
-              <img id="device-image" class="app-device" src="assets/version14_images/Changes.png" srcset="assets/version14_images/Changes@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>Review changes</h3>
-                <p>All merge request changes rendered with a unified diff view.</p>
-              </div>
-            </div>
-        </div>
-        <h2>View files from any time.</h2>
-        <div class="app-devices-col-wrapper">
-            <div class="app-devices-col  app-devices-col-1">
-              <img id="device-image" class="app-device" src="assets/version14_images/Files.png" srcset="assets/version14_images/Files@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>View your files</h3>
-                <p>Select your desired branch and commit, view all files from that point in history.</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-2">
-              <img id="device-image" class="app-device" src="assets/version14_images/FileLM.png" srcset="assets/version14_images/FileLM@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>View source files</h3>
-                <p>Trident supports syntax highlighting, we have big ambitions to make this even better in future...</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-3">
-              <img id="device-image" class="app-device" src="assets/version14_images/FileNM.png" srcset="assets/version14_images/FileNM@2x.png 2x" style="width:300px;height:606px;"></img>
-              <div class="text-left">
-                <h3>Nightmode</h3>
-                <p>It just looks cool!</p>
-              </div>
-            </div>
-        </div>
-            <!-- <div class="app-devices-col  app-devices-col-2">
-              <div id="device-1-description" class="device-description">
-                <h3>Project History</h3>
-                <p>See all recent project events, recent pushes and milestone progress.</p>
-              </div>
-              <div id="device-2-description" class="device-description">
-                <h3>Merge Requests</h3>
-                <p>Compose, view, update, comment and approve merge requests.</p>
-              </div>
-              <div id="device-3-description" class="device-description">
-                <h3>Issues, Milestones and Labels</h3>
-                <p>Create, edit, close and reopen issues. Organise issues with labels.</p>
-              </div>
-              <div id="device-4-description" class="device-description">
-                <h3>Project Files and Syntax Highlighting</h3>
-                <p>Project files and folders can be browsed from any commit. Files support syntax highlighting for beautiful display.</p>
-              </div>
-            </div>
-            <div class="app-devices-col  app-devices-col-3">
-              <div id="device-5-description" class="device-description">
-                <h3>Dashboard</h3>
-                <p>Track progress accross multiple projects in the dashboard.</p>
-              </div>
-              <div id="device-6-description" class="device-description">
-                <h3>Diff View</h3>
-                <p>Dive in the detail and see exactly what's changing with the diff view.</p>
-              </div>
-              <div id="device-7-description" class="device-description">
-                <h3>Comment on issues</h3>
-                <p>See the detail of the issue, tag team members in comments and solve problems together.</p>
-              </div>
-              <div id="device-8-description" class="device-description">
-                <h3>Nightmode</h3>
-                <p>Enable nightmode for comfortable reading at night. Plus it looks really cool.</p>
-              </div>
-            </div> -->
-        </div>
-      </div>
-    </section>
-
-    <section id="features">
-      <div class="wrapper">
-        <h2>Other notable features.</h2>
-        <div class="app-header-col-wrapper">
-            <div class="app-header-col  app-header-col-1">
-              <div>
-                <h3>Multiple GitLab Hosts</h3>
-                <p>Trident allows you to add multiple GitLab hosts, so you can easily switch host without re-entering login details.</p>
-              </div>
-            </div>
-            <div class="app-header-col  app-header-col-2">
-              <div>
-                <h3>Variable Font Size</h3>
-                <p>Project files and diff views support variable font size, change the font size to something easier to read.</p>
-              </div>
-            </div>
-            <div class="app-header-col  app-header-col-3">
-              <div>
-                <h3>Supports GitLab 7x and above</h3>
-                <p>Trident has been well tested on GitLab 7x and above. Though, if you see bugs, we're interested in your feedback!</p>
-              </div>
-            </div>
-        </div>
-        <div class="app-header-col-wrapper">
-            <div class="app-header-col  app-header-col-1">
-              <div>
-                <h3>Self Signed Certificate Support</h3>
-                <p>If you don't use a standard Certificate Authority, don't worry! Trident will prompt you to trust a certificate based on the SHA1 fingerprint. Your certificate will then be pinned.</p>
-              </div>
-            </div>
-            <div class="app-header-col  app-header-col-2">
-              <div>
-                <h3>App Transport Security Enabled</h3>
-                <p>Improved security for gitlab.com and github.com connections using Certificate Pinning and TLS 1.2 Forward Secrecy. Trident will force TLS 1.2 minimum on all secure connections.</p>
-              </div>
-            </div>
-            <div class="app-header-col  app-header-col-3">
-              <div>
-                <h3>Feedback appreicated</h3>
-                <p>Thought of an awesome feature, found a bug? Let me know!</p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-freshcocoa">
-      <div class="wrapper">
-        <h1>Some Robots is just one human</h1>
-        <img alt="me" src="assets/me.jpg">
-        <h2>This is Matt</h2>
-      </div>
+    <section id="apps">
+      <!-- <a src="{{ site.baseurl }}/trident.html"> -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="192" height="192" viewBox="0, 0, 4000, 4000">
+          <script xmlns="http://www.w3.org/2000/svg" type="text/ecmascript">
+              <![CDATA[
+                function GotoTridentApp(evt) {
+                  window.location.href = '{{ site.baseurl }}/trident.html';
+                }
+              ]]>
+          </script>
+          <defs>
+            <clipPath id="Clip_1">
+              <path d="M-0,-0 C-0,-0 4000,-0 4000,-0 C4000,-0 4000,4000 4000,4000 C4000,4000 -0,4000 -0,4000 C-0,4000 -0,-0 -0,-0 z"/>
+            </clipPath>
+            <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="1946.199" y1="133.696" x2="2007.801" y2="3999.513">
+              <stop offset="0" stop-color="#F8F8F8"/>
+              <stop offset="0" stop-color="#F8F8F8"/>
+              <stop offset="0" stop-color="#F8F8F8"/>
+              <stop offset="1" stop-color="#FDFDFD" stop-opacity="0.946"/>
+            </linearGradient>
+          </defs>
+          <g id="Layer_3" onmousedown="GotoTridentApp(evt)">
+            <g id="1024_App_Icon_for_the_App_Store">
+              <g id="base">
+                <path id="trident_icon" d="M-0,-0 C-0,-0 4000,-0 4000,-0 C4000,-0 4000,4000 4000,4000 C4000,4000 -0,4000 -0,4000 C-0,4000 -0,-0 -0,-0 z" fill="#007AFF"/>
+              </g>
+              <path d="M2134.26,4000 C2119.789,3868.852 2142.858,3551.323 2308.585,3551.323 C2786.735,3496.416 3196.666,3144.271 3230.531,2467.383 C3234.714,2383.778 3191.869,1997.486 3076.876,1445.277 C3069.307,1403.645 3055.114,1259.825 3114.724,1257.932 C3244.5,1257.932 3314.369,1304.295 3349.704,1355.37 C3311.121,1251.312 3283.766,1235.716 3216.416,1141.407 C3088.668,994.229 2997.776,909.906 2934.861,779.292 C2829.293,599.656 2781.992,371.493 2773.479,260.817 C2765.865,318.467 2741.127,416.615 2738.622,485.32 C2727.652,583.467 2771.83,904.241 2807.115,1154.989 C2820.062,1246.991 2929.533,1728.944 2865.796,2222.39 C2806.909,2678.286 2416.336,2723.5 2197.148,2524.421 C1990.095,2336.364 2108.091,751.951 2119.788,749.26 C2192.213,732.602 2280.064,782.342 2308.633,829.969 C2204.421,466.958 2119.789,351.402 1977,133.21 C1834.212,351.402 1749.579,466.958 1645.367,829.969 C1673.936,782.342 1761.787,732.602 1834.212,749.26 C1845.909,751.951 1963.905,2336.364 1756.852,2524.421 C1537.664,2723.5 1147.091,2678.286 1088.204,2222.39 C1024.467,1728.944 1133.938,1246.991 1146.885,1154.989 C1182.17,904.241 1226.348,583.467 1215.378,485.32 C1212.873,416.615 1188.134,318.467 1180.521,260.817 C1172.008,371.493 1124.707,599.656 1019.139,779.292 C956.224,909.906 865.332,994.229 737.584,1141.407 C670.234,1235.716 642.879,1251.312 604.296,1355.37 C639.631,1304.295 709.5,1257.932 839.276,1257.932 C898.886,1259.825 884.693,1403.645 877.124,1445.277 C762.131,1997.486 719.286,2383.778 723.469,2467.383 C757.334,3144.271 1167.265,3496.416 1645.415,3551.323 C1811.142,3551.323 1834.211,3868.852 1819.74,4000 C1819.74,4000 1960.555,4000 2134.261,4000" fill="url(#Gradient_1)"/>
+            </g>
+          </g>
+        </svg>
+      <!-- </a> -->
+      <h1>Trident</h1>
     </section>
 
 </div>

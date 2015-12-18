@@ -322,6 +322,35 @@ body, input, textarea, select, button {
     }
 }
 
+#apps {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#apps h1 {
+  text-align: center;
+  font-size: 37px;
+  @include media-query($on-palm) {
+    font-size: 20px;
+  }
+}
+
+#apps svg {
+  border-radius: 3em;
+}
+
+#apps svg:hover #trident_icon {
+  animation-name: trident_hover_keyframes;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes trident_hover_keyframes {
+    from {fill: #007AFF;}
+    to {fill: #333333;}
+}
+
 .app-device {
   margin-bottom: $spacing-unit;
 }
