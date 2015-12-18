@@ -5,7 +5,7 @@ date:   2015-12-02 11:28:21
 categories: news update
 comments: true
 ---
-Trident 1.4 (the next version as of writing) is going to be a big update, the features I expect to add will be (but not limited to):
+Trident 1.4 <strike>(the next version as of writing)</strike> is going to be a big update, the features I expect to add will be (but not limited to):
 
 - Markdown support for issues and merge requests
 - Emoji suport

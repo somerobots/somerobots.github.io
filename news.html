@@ -31,6 +31,7 @@ date:   2015-08-24 11:27:21
     <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
       <header class="post-header">
         <h3 class="post-title">{{ page.title }}</h3>
+        <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
       </header>
     </a>
   </div>
