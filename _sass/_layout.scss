@@ -7,6 +7,21 @@
 
 }
 
+#some-robots-logo strong {
+  color: #1fa8fc;
+  background-image: -webkit-linear-gradient(92deg,#1780fb,#1fa8fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+  font-weight: 200;
+  font-size: 25px;
+  text-align: center;
+  @include media-query($on-palm) {
+    font-weight: 150;
+    font-size: 32px;
+  }
+}
+
 #trident-logo strong {
   color: #1fa8fc;
   background-image: -webkit-linear-gradient(92deg,#1780fb,#1fa8fc);
