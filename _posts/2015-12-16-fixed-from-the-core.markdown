@@ -7,7 +7,7 @@ comments: true
 ---
 *This is a technical post about the work that has gone into bringing you Trident v1.4.*
 
-(v1.4 is not actually released yet! - waiting for review)
+<strike>(v1.4 is not actually released yet! - waiting for review)</strike>
 
 v1.4 was not a release for purely features, v1.3 had some serious bugs as I announced [earlier](http://somerobots.com/news/update/2015/12/02/Improving-Trident.html). Fixing these bugs involved auditing and rewriting huge parts of the app.
 
