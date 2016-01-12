@@ -42,4 +42,51 @@ layout: landing2
       <h1><a href="/trident.html">Trident</a></h1>
     </section>
 
+    <section>
+      <div class="post">
+        <div class="wrapper">
+          <article class="post-content">
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup" style="text-align:center;">
+            <form action="//somerobots.us11.list-manage.com/subscribe/post?u=e96d14e0a0c009e0fa9f58fb3&amp;id=bb6a053682" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+              <h3>Subscribe to our mailing list</h3>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_e96d14e0a0c009e0fa9f58fb3_bb6a053682" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+
+            {% for page in site.posts %}
+              {% if page.title %}
+              <div class="post">
+                {% if forloop.first %}
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+                  <header class="post-header">
+                    <h3 class="post-title">{{ page.title }}</h3>
+                    <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+                  </header>
+                </a>
+                <article class="post-content">
+                   {{ page.content }}
+               </article>
+               {% endif %}
+              </div>
+              {% endif %}
+            {% endfor %}
+          </article>
+        </div>
+      </div>
+    </section>
+
 </div>
