@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Whats next for Trident"
+title:  "Next for Trident"
 date:   2016-01-29 11:27:21
 categories: news update
 comments: true
