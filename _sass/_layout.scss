@@ -50,6 +50,28 @@
     }
 }
 
+#notifications {
+  color: #fff;
+  background: #333333;
+  padding: $spacing-unit 0;
+}
+
+#notifications h1 {
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
+#notifications h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 37px;
+  @include media-query($on-palm) {
+    font-size: 20px;
+  }
+}
+
 #features {
   background: #333333;
   padding: $spacing-unit 0;
@@ -60,6 +82,15 @@
   color: #fff;
   text-align: center;
   font-size: 32px;
+}
+
+#features h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 37px;
+  @include media-query($on-palm) {
+    font-size: 20px;
+  }
 }
 
 /**
@@ -294,15 +325,6 @@ body, input, textarea, select, button {
   }
 }
 
-#features h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 37px;
-  @include media-query($on-palm) {
-    font-size: 20px;
-  }
-}
-
 #app-header h3 {
   color: #898989;
   text-align: center;
@@ -388,6 +410,10 @@ body, input, textarea, select, button {
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .app-devices-col {

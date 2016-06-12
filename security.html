@@ -1,0 +1,28 @@
+---
+layout: page
+title:  "Security"
+date:   2016-06-12 11:27:21
+---
+
+<div class="post">
+  <header class="post-header">
+    <h3 class="post-title">How we keep you credentials safe.</h3>
+  </header>
+  <article class="post-content">
+    <p>
+      When you register your device for Push Notifications, we transmit your OAuth token via HTTPS to our cloud server.
+    </p>
+    <p>
+      We use Gemnasium to automatically monitor dependency vulnerabilities for our Push Server, our current status is as follows: <a href='https://gemnasium.com/github.com/mattsrobot/NotificationsServer'><img src="https://gemnasium.com/badges/ff0df57bbee44854f6b8145bd49e99fb.svg" alt="Dependency Status" /></a>
+    </p>
+    <p>
+      Our Push Server is entirely hosted on Heroku, which keeps the base platform up-to-date from security vulnerabilities.
+    </p>
+    <p>
+      We check inputs for the correct types and take steps to mitigate things like SQL Injection attacks.
+    </p>
+    <p>
+      If there is ever a detected security breach we'll contact GitHub directly to revoke API access, we'll also alert users of this breach through Twitter, Website updates and the E-mail address you used to register for Push Notifications.
+    </p>
+  </article>
+</div>

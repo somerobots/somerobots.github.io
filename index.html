@@ -18,6 +18,23 @@ layout: landing
       </div>
     </section>
 
+    <section id="notifications">
+      <div class="wrapper">
+        <h2 id="notifications-pushed"> </h2>
+        <div class="text-center">
+          <h3>Assigned an Issue? Need to merge a Pull Request? You'll know faster than ever!</h3>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function() {
+        $.getJSON("https://notifications-poller-server.herokuapp.com/activity", function(data) {
+          $("#notifications-pushed").text("We've now pushed over " + data['sent_notifications'] + " notifications!");
+        });
+      });
+    </script>
+
     <section id="app-devices">
       <div class="wrapper">
         <h2>Issues tamed with Markdown.</h2>
