@@ -5,18 +5,8 @@ date:   2016-06-20 11:27:21
 categories: news update
 comments: true
 ---
-As I mentioned in January, I have recently started some freelance work, this project is due to complete on the 22nd April, I have decided when it's complete, I will spend a further two to three months of full-time development on Trident.
+I'm really excited to announce v1.5.1 has landed on the App Store, for the week I've been carefully monitoring our Push Notifications server. Over 2k notifications have been pushed in that time, so it seems to be handling ok! Will be adding some future incremental updates to improve this for iOS 10, as well as some fixes for GitLab login for 2FA security.
 
-Trident has had over a 1000 downloads since it launched in November, about 200 active users - and is now averaging over 100 downloads every week. I'm very happy with this, so I really want to improve Trident to see where it goes next. I wanted to give an update on what's currently happening.
+Did you know I'm looking for a cofounder to help build Trident? Read more about this here:
 
-I've been working on refactoring Trident in the evenings and weekends, in preparation for feature development in April. When I first built and released Trident, I was not concerned with repeating code - or achieving code perfection, I was concerned with shipping a working product. Problems and bugs I encountered along the way often made this code more complex - later I solved these problems in more elegant ways, but these were not replicated in the codebase.
-
-Typically, Trident displays a list of data objects, say - Projects, Issues, Merge Requests, Users. The presentation often involves, searching, pagination, calling an API to fetch data and reacting to the results of this API call. Trident uses generic 'Service Provider' classes to make API calls in its View Controllers. Despite this, controller code is still too complex, reacting to data changes is often repeated code. A big part of the refactor involves making a generic controller class that provides all this standard functionality, but allowing a 'Data Provider', provide data to the controller in a reusable way. The 'Data Provider' will be responsible for internally calling the API calls through its 'Service Provider' classes, and delegating updates to the view as data changes.
-
-The next big part of the refactor involves transitioning Trident away from mutable data structures to immutable ones. Trident uses Apple's Core Data to cache data from API's. Core Data is like an ORM, allowing Trident to model data in a Graph. The entities returned by Core Data are mutable. Trident will continue to use Core Data, but mutable entities will not be exposed to the view layer, but a immutable representation of the data.
-
-When Trident is displaying data, the mutability of Core Data entities is not advantageous, because views are only concerned with reading data - not modifying it. Core Data is complex, and this is an attempt to reduce complexity (not add to it!).
-
-I've already made great progress with this refactoring goal, and I hope by April this will have completed. Once complete, the TestFlight beta will resume, and regression testing will commence (I really appreciate testing help from people participating in the TestFlight beta!).
-
-I look forward to sharing more updates on future features of Trident in June!    
+https://github.com/somerobots/Trident/issues/28    
